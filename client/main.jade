@@ -1,0 +1,15 @@
+head
+  title Tracking
+
+body
+  hr
+  h2 Tracking System
+  hr
+  +trackingInfo
+
+template(name="trackingInfo")
+  hr
+  h2 Tracking Info:
+  ul
+    li uuid: {{uuid}}
+  hr
