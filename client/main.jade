@@ -9,6 +9,11 @@ body
 
 template(name="trackingInfo")
   hr
+  if connected
+    h4 connected / {{connectId}}
+  else
+    h2 disconnected
+  hr
   h2 Tracking Info:
   ul
     li uuid: {{uuid}}
